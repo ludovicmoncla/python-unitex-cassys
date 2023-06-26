@@ -138,7 +138,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     delete_tmp_files = True    
-    unitex = Unitex(args.version, args.lang, args.install_path, args.install_path_app, delete_tmp_files)
+    unitex = Unitex(args.cascade_name, args.lang, args.install_path, args.install_path_app, delete_tmp_files)
     unitex.run(args.input_filepath)
 
 
