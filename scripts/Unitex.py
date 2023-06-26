@@ -16,8 +16,8 @@ class Unitex:
 
 
     def run(self, filepath):
-        analysis_cascade = os.path.join('Cassys', self.version, 'analysis.csc')
-        synthesis_cascade = os.path.join('Cassys', self.version, 'synthesis.csc')
+        analysis_cascade = os.path.join('CasSys', self.version, 'analysis.csc')
+        synthesis_cascade = os.path.join('CasSys', self.version, 'synthesis.csc')
         # preprocessing needed, if use of dictionnaries
         #unitex.run_preprocessing(filepath)
         self.run_cascade(filepath, analysis_cascade, "")
