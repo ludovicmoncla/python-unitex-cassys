@@ -108,11 +108,11 @@ class Unitex:
         cmd = self.install_path_app + "/UnitexToolLogger Convert -s" + self.lang.upper() + " -dUTF-8 --ss="+suffix+" " + file_path + suffix2 + ".txt"
         #os.system(cmd + " > /dev/null")
         check_call(list(cmd.split(" ")), stdout=DEVNULL, stderr=STDOUT)
-        #if self._deleteTmpFiles:
-        #    try:
-        #        os.remove(file_path + suffix2 + ".txt")
-        #    except:
-        #        pass
+        if self.delete_tmp_files:
+            try:
+                os.remove(file_path + suffix2 + ".txt")
+            except:
+                pass
 
 
 if __name__ == '__main__':
