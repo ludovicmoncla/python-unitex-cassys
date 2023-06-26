@@ -24,8 +24,20 @@ class Unitex:
         self.run_cascade(filepath, synthesis_cascade, "_csc")
         self.csc2xml(filepath, "-utf8", "_csc_csc")
 
-        #TODO: add root to xml file
-        #TODO: add a return value (xml content)
+        with open(filepath + "_csc_csc-utf8.txt", "r", encoding='utf-16le') as file:
+            content = file.read()#.decode('utf-16le')
+            content = "<?xml version='1.0' encoding='utf-8'?><doc>" + content[1:] + "</doc>"
+        
+        if self.delete_tmp_files:
+            try:
+                os.remove(filepath + "_csc_csc.txt")
+            except:
+                pass
+
+        with open(filepath + "_csc_csc.xml", "w") as file:
+            file.write(content)
+
+        return content
 
 
     def run_preprocessing(self, file_path):
@@ -108,11 +120,11 @@ class Unitex:
         cmd = self.install_path_app + "/UnitexToolLogger Convert -s" + self.lang.upper() + " -dUTF-8 --ss="+suffix+" " + file_path + suffix2 + ".txt"
         #os.system(cmd + " > /dev/null")
         check_call(list(cmd.split(" ")), stdout=DEVNULL, stderr=STDOUT)
-        if self.delete_tmp_files:
-            try:
-                os.remove(file_path + suffix2 + ".txt")
-            except:
-                pass
+        #if self.delete_tmp_files:
+        #    try:
+        #        os.remove(file_path + suffix2 + ".txt")
+        #    except:
+        #        pass
 
 
 if __name__ == '__main__':
