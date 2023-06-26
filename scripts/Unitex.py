@@ -21,8 +21,11 @@ class Unitex:
         # preprocessing needed, if use of dictionnaries
         #unitex.run_preprocessing(filepath)
         self.run_cascade(filepath, analysis_cascade, "")
-        self.run_cascade(filepath, synthesis_cascade, "-utf8", "_csc")
-        self.csc2xml(filepath, "_csc_csc")
+        self.run_cascade(filepath, synthesis_cascade, "_csc")
+        self.csc2xml(filepath, "-utf8", "_csc_csc")
+
+        #TODO: add root to xml file
+        #TODO: add a return value (xml content)
 
 
     def run_preprocessing(self, file_path):
@@ -73,7 +76,7 @@ class Unitex:
         check_call(list(cmd.split(" ")), stdout=DEVNULL, stderr=STDOUT)
 
         cmd = self.install_path_app + "/UnitexToolLogger Cassys -a" + self.install_path + "/" + self.lang + "/Alphabet.txt"
-        cmd += " -t" + file_path + suffix + ".snt -l" + self.install_path+ "/" + self.lang + cascade_path + " -v -r" + self.install_path + "/" + self.lang + "/Graphs/"
+        cmd += " -t" + file_path + suffix + ".snt -l" + self.install_path+ "/" + self.lang + "/" + cascade_path + " -v -r" + self.install_path + "/" + self.lang + "/Graphs/"
         #os.system(cmd + " > /dev/null")
         check_call(list(cmd.split(" ")), stdout=DEVNULL, stderr=STDOUT)
 
