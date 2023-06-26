@@ -3,8 +3,8 @@ import shutil
 import argparse
 from subprocess import DEVNULL, STDOUT, check_call
 
-class Unitex:
 
+class Unitex:
 
     def __init__(self, version="Standard", lang="French", install_path=None, install_path_app=None, delete_tmp_files=True):
         self.version = version
