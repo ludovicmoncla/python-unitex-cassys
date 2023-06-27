@@ -1,4 +1,4 @@
-# Running cascades of transducers with Unitex
+# Running Unitex cascades of transducers with Python
 
 ## Overview
 
