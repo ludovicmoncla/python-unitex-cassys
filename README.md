@@ -28,7 +28,7 @@ The POS tagset used in patterns shoud be adapted depending the POS tagger used i
 
 ### Synthesis cascade
 
-The synthesis cascade transforms the output of the first cascade (XML-CasSys) into valid XML markup language following the annotation tagset defined in the analysis cascade. By default, all tokens are embedded in a <w> xml element with their pos and lemma in attributes.
+The synthesis cascade transforms the output of the first cascade (XML-CasSys) into valid XML markup language following the annotation tagset defined in the analysis cascade. By default, all tokens are embedded in a `<w>` xml element with their pos and lemma in attributes.
 
 
 
