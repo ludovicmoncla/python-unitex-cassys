@@ -15,13 +15,13 @@ The code available in this repository is working with a Unitex pipeline composed
 
 ### Analysis cascade
 
-The analysis cascade is the core of the annotation process, it executes a sequence of transducers which annotate elements in a specific order. The annotations added by transducers can be reused as patterns in the next transducers of the cascade.
+The analysis cascade (`analysis.csc`) is the core of the annotation process, it executes a sequence of transducers which annotate elements in a specific order. The annotations added by transducers can be reused as patterns in the next transducers of the cascade.
 The POS tagset used in patterns shoud be adapted depending the POS tagger used in input. 
 
 
 ### Synthesis cascade
 
-The synthesis cascade transforms the output of the first cascade (XML-CasSys) into valid XML markup language following the annotation tagset defined in the analysis cascade. By default, all tokens are embedded in a `<w>` xml element with their `pos` and `lemma` in attributes.
+The synthesis cascade (`synthesis.csc`) transforms the output of the first cascade (XML-CasSys) into valid XML markup language following the annotation tagset defined in the analysis cascade. By default, all tokens are embedded in a `<w>` xml element with their `pos` and `lemma` in attributes.
 
 
 ## Input
