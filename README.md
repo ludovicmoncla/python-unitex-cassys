@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides Python code that enables the execution of Unitex cascades for annotating texts.
+This repository provides Python code that enables the execution of Unitex CasSys cascades for annotating texts.
 
 The Unitex/Gramlab program should be installed: [https://unitexgramlab.org/](https://unitexgramlab.org/)
 
@@ -15,19 +15,20 @@ You can use the functions from `scripts/posTagger_to_unitex.py` to produce this 
 Functions for converting Treetagger and Stanza formats will be available soon.
 
 
-The code available in this repository is working with a unitex pipeline composed of two cascades of transducers:
+The code available in this repository is working with a Unitex pipeline composed of two cascades of transducers:
 * analysis.csc
 * synthesis.csc
 
 
 ### Analysis cascade
 
-
+The analysis cascade is the core of the annotation process, it executes a sequence of transducers which annotate elements in a specific order. The annotations added by transducers can be reused as patterns in the next transducers of the cascade.
+The POS tagset used in patterns shoud be adapted depending the POS tagger used in input. 
 
 
 ### Synthesis cascade
 
-
+The synthesis cascade transforms the output of the first cascade (XML-CasSys) into the valid XML markup language following the annotation tagset defined in the analysis cascade.
 
 
 
