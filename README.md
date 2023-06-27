@@ -8,7 +8,7 @@ The Unitex/Gramlab program should be installed: [https://unitexgramlab.org/](htt
 
 
 
-The code available in this repository is working with a Unitex pipeline composed of two cascades of transducers:
+The code available in this repository is working with a Unitex CasSys pipeline composed of two cascades of transducers:
 * analysis.csc
 * synthesis.csc
 
