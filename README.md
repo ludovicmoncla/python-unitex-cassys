@@ -37,6 +37,9 @@ Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/to
 
 ## Demonstration
 
+* Notebook: [tests_landscape-sentiment.ipynb](tests_landscape-sentiment.ipynb) 
+
+
 
 
 ## Configure a conda environment
