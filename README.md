@@ -37,12 +37,19 @@ Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/to
 
 ## Directory structure
 
+The Unitex path directory should have the following structure:
+
+* `Unitex-GramLab-3.2/{language}/CasSys/{project-name}/analysis.csc`
+* `Unitex-GramLab-3.2/{language}/CasSys/{project-name}/synthesis.csc`
+* `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/analysis/`
+* `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/synthesis/`
+
+The synthesis graphs and cascade can be downloaded here:
 
 
 ## Demonstration
 
 * Notebook: [usage-demo.ipynb](usage-demo.ipynb) 
-
 
 
 
