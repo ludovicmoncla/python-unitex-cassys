@@ -12,7 +12,7 @@ The input should be a POS tagged txt-file where each token is encapsulated withi
 > {I,I.PRON} {visit,visit.VERB} {the,the.DET} {city,city.NOUN} {of,of.ADP} {Lyon,Lyon.PROPN} {.,.PUNCT}
 
 You can use the functions from `scripts/posTagger_to_unitex.py` to produce this format depending on the POS tagger you use. At the moment, functions are given for converting [spaCy](https://spacy.io) doc object. 
-Functions for converting Treetagger and Stanza formats will be available soon.
+Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and [Stanza](https://stanfordnlp.github.io/stanza/) formats will be available soon.
 
 
 The code available in this repository is working with a Unitex pipeline composed of two cascades of transducers:
