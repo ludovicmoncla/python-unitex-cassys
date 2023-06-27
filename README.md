@@ -35,9 +35,13 @@ You can use the functions from `scripts/posTagger_to_unitex.py` to produce this 
 Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and [Stanza](https://stanfordnlp.github.io/stanza/) formats will be available soon.
 
 
+## Directory structure
+
+
+
 ## Demonstration
 
-* Notebook: [tests_landscape-sentiment.ipynb](tests_landscape-sentiment.ipynb) 
+* Notebook: [usage-demo.ipynb](usage-demo.ipynb) 
 
 
 
