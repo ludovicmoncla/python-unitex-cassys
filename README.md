@@ -1,4 +1,4 @@
-# Running Unitex cascades of transducers with Python
+# Running Unitex CasSys cascades with Python
 
 ## Overview
 
@@ -82,3 +82,7 @@ conda activate unitex-py39
 pip install -r requirements.txt
 ```
 
+
+## Acknowledgement
+
+The authors are grateful to the ASLAN project (ANR-10-LABX-0081) of the Université de Lyon, for its financial support within the French program "Investments for the Future" operated by the National Research Agency (ANR).
