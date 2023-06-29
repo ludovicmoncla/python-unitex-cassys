@@ -30,11 +30,11 @@ class Unitex:
         
         if self.delete_tmp_files:
             try:
-                os.remove(filepath + "_csc_csc.txt")
+                os.remove(filepath + "_csc_csc-utf8.txt")
             except:
                 pass
 
-        with open(filepath + "_csc_csc.xml", "w") as file:
+        with open(filepath + ".xml", "w") as file:
             file.write(content)
 
         return content
@@ -120,11 +120,11 @@ class Unitex:
         cmd = self.install_path_app + "/UnitexToolLogger Convert -s" + self.lang.upper() + " -dUTF-8 --ss="+suffix+" " + file_path + suffix2 + ".txt"
         #os.system(cmd + " > /dev/null")
         check_call(list(cmd.split(" ")), stdout=DEVNULL, stderr=STDOUT)
-        #if self.delete_tmp_files:
-        #    try:
-        #        os.remove(file_path + suffix2 + ".txt")
-        #    except:
-        #        pass
+        if self.delete_tmp_files:
+            try:
+                os.remove(file_path + suffix2 + ".txt")
+            except:
+                pass
 
 
 if __name__ == '__main__':
