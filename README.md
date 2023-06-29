@@ -44,7 +44,7 @@ The Unitex path directory should have the following structure:
 * `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/analysis/`
 * `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/synthesis/`
 
-The synthesis graphs and cascade can be downloaded here:
+The synthesis graphs and cascade can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
 
 
 ## Demonstration
