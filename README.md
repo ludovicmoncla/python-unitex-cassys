@@ -33,7 +33,7 @@ The input should be a POS tagged txt-file where each token is encapsulated withi
 The following sentence:
 > Mark your calendars for an exciting event at 35 Charles Street, London, on the 3rd of June 2023.
 
-Should be tagged as follows:
+should be tagged as follows:
 > {Mark,mark.VERB} {your,your.PRON} {calendars,calendar.NOUN} {for,for.ADP} {an,an.DET} {exciting,exciting.ADJ} {event,event.NOUN} {at,at.ADP} {35,35.NUM} {Charles,Charles.PROPN} {Street,Street.PROPN} {\,,.PUNCT} {London,London.PROPN} {\,,.PUNCT} {on,on.ADP} {the,the.DET} {3rd,3rd.NOUN} {of,of.ADP} {June,June.PROPN} {2023,2023.NUM} {.,.PUNCT} 
 
 
