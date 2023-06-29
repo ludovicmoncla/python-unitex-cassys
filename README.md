@@ -29,7 +29,8 @@ The synthesis cascade (`synthesis.csc`) transforms the output of the first casca
 The input should be a POS tagged txt-file where each token is encapsulated within brackets: `{token,lemma,pos}`
 
 * Example:
-> {I,I.PRON} {visit,visit.VERB} {the,the.DET} {city,city.NOUN} {of,of.ADP} {Lyon,Lyon.PROPN} {.,.PUNCT}
+> {Mark,mark.VERB} {your,your.PRON} {calendars,calendar.NOUN} {for,for.ADP} {an,an.DET} {exciting,exciting.ADJ} {event,event.NOUN} {at,at.ADP} {35,35.NUM} {Charles,Charles.PROPN} {Street,Street.PROPN} {\,,.PUNCT} {London,London.PROPN} {\,,.PUNCT} {on,on.ADP} {the,the.DET} {3rd,3rd.NOUN} {of,of.ADP} {June,June.PROPN} {2023,2023.NUM} {.,.PUNCT} 
+
 
 You can use the functions from `scripts/posTagger_to_unitex.py` to produce this format depending on the POS tagger you use. At the moment, functions are given for converting [spaCy](https://spacy.io) doc object. 
 Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and [Stanza](https://stanfordnlp.github.io/stanza/) formats will be available soon.
