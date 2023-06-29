@@ -63,16 +63,16 @@ An example of cascades and graphs can be downloaded here: [Unitex-CasSys](./Unit
 
 
 
-## Configure a conda environment
+### Configure a conda environment
 
-### Clone this repository
+#### Clone this repository
 
 ```bash
 
 git clone https://github.com/ludovicmoncla/cascades-transducers-unitex.git
 ```
 
-### Configure the environment with all dependencies
+#### Configure the environment with all dependencies
 
 * Create a new environment: `unitex-py39`
 
