@@ -8,7 +8,7 @@ The Unitex/Gramlab program should be installed: [https://unitexgramlab.org/](htt
 
 
 
-The code available in this repository is working with a Unitex CasSys pipeline composed of two cascades of transducers:
+The code available in this repository is working with a Unitex CasSys pipeline composed of two cascades of transducers (i.e., graphs):
 * analysis.csc
 * synthesis.csc
 
@@ -38,7 +38,7 @@ Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/to
 
 ## Directory structure
 
-The Unitex path directory should have the following structure:
+The Unitex path folders should have the following structure:
 
 * `{unitex-directory}/{language}/CasSys/{project-name}/analysis.csc`
 * `{unitex-directory}/{language}/CasSys/{project-name}/synthesis.csc`
@@ -47,10 +47,12 @@ The Unitex path directory should have the following structure:
 
 `{unitex-directory}` refers to your Unitex personal working directory. It might be different from the Unitex installation directory and is usually installed in your `$HOME` directory.
 
-The synthesis graphs and cascade can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
+
 
 
 ## Demonstration
+
+An example of cascades and graphs can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
 
 * Notebook: [usage-demo.ipynb](usage-demo.ipynb) 
 
