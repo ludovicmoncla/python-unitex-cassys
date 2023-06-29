@@ -30,4 +30,4 @@ Then, you can build you own analysis cascade by adding new graphs in the `Graphs
 * Make sure to change the project name in the graph paths in the `synthesis.csc` file.
 * Make sure to add the `synthesis/grfSuppressionAccolades.fst2` graph at the end of the `analysis` cascade.
 
-![Analysis CasSys cascade screenshot](Analysis_cassys_cascade_screenshot.png)
+![Analysis CasSys cascade screenshot](img/Analysis_cassys_cascade_screenshot.png)
