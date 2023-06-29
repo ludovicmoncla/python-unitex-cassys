@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository provides Python code that enables the execution of Unitex CasSys cascades for annotating texts.
+This repository provides Python code for the execution of Unitex CasSys cascades for annotating texts.
 
-The Unitex/Gramlab program should be installed: [https://unitexgramlab.org/](https://unitexgramlab.org/)
+The [Unitex/Gramlab](https://github.com/UnitexGramLab) program should be installed: [https://unitexgramlab.org/](https://unitexgramlab.org/)
 
 
 
