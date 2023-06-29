@@ -28,21 +28,28 @@ def preprocess_lemma(content):
 def spacy2unitex(doc):
     content = ''
     for token in doc:
-        lemma = preprocess_lemma(token.lemma_)
-        form = preprocess_token(token.text)
         content += '{' 
-        content += form
+        content += preprocess_token(token.text)
         content += ','
-        content += lemma
+        content += preprocess_lemma(token.lemma_)
         content += '.'
         content += token.pos_
         content += '} '
     return content
 
 
-def stanza2unitex():
-    pass
-
+def stanza2unitex(doc):
+    content = ''
+    for sent in doc.sentences:
+        for word in sent.words:
+            content += '{'
+            content += preprocess_token(word.text)
+            content += ','
+            content += preprocess_lemma(word.lemma)
+            content += '.'
+            content += word.upos
+            content += '} '
+    return content
 
 def treetagger2unitex():
     pass
