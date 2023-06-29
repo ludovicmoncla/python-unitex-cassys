@@ -20,6 +20,7 @@ The Unitex path directory should have the following structure:
 You must copy the `CasSys/Tutorial/synthesis.csc` CasSys cascade file and the `Graphs/Tutorial/synthesis/` folder from the downloaded zip in you own project directory: 
 
 > Unitex-GramLab-3.2/{language}/CasSys/{project-name}/synthesis.csc
+
 > Unitex-GramLab-3.2/{language}/Graphs/{project-name}/synthesis/*
 
 Then, you can build you own analysis cascade by adding new graphs in the `Graphs/{project-name}/analysis/` folder and by editing the `CasSys/{project-name}/analysis.csc` file.
