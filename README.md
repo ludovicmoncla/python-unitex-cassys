@@ -40,10 +40,12 @@ Functions for converting [Treetagger](https://www.cis.uni-muenchen.de/~schmid/to
 
 The Unitex path directory should have the following structure:
 
-* `Unitex-GramLab-3.2/{language}/CasSys/{project-name}/analysis.csc`
-* `Unitex-GramLab-3.2/{language}/CasSys/{project-name}/synthesis.csc`
-* `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/analysis/`
-* `Unitex-GramLab-3.2/{language}/Graphs/{project-name}/synthesis/`
+* `{unitex-directory}/{language}/CasSys/{project-name}/analysis.csc`
+* `{unitex-directory}/{language}/CasSys/{project-name}/synthesis.csc`
+* `{unitex-directory}/{language}/Graphs/{project-name}/analysis/`
+* `{unitex-directory}/{language}/Graphs/{project-name}/synthesis/`
+
+`{unitex-directory}` refers to your Unitex personal working directory. It might be different from the Unitex installation directory and is usually installed in your `$HOME` directory.
 
 The synthesis graphs and cascade can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
 
