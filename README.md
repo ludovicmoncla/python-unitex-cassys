@@ -29,6 +29,11 @@ The synthesis cascade (`synthesis.csc`) transforms the output of the first casca
 The input should be a POS tagged txt-file where each token is encapsulated within brackets: `{token,lemma,pos}`
 
 * Example:
+
+The following sentence:
+> Mark your calendars for an exciting event at 35 Charles Street, London, on the 3rd of June 2023.
+
+Should be tagged as follows:
 > {Mark,mark.VERB} {your,your.PRON} {calendars,calendar.NOUN} {for,for.ADP} {an,an.DET} {exciting,exciting.ADJ} {event,event.NOUN} {at,at.ADP} {35,35.NUM} {Charles,Charles.PROPN} {Street,Street.PROPN} {\,,.PUNCT} {London,London.PROPN} {\,,.PUNCT} {on,on.ADP} {the,the.DET} {3rd,3rd.NOUN} {of,of.ADP} {June,June.PROPN} {2023,2023.NUM} {.,.PUNCT} 
 
 
@@ -47,12 +52,12 @@ The Unitex path folders should have the following structure:
 
 `{unitex-directory}` refers to your Unitex personal working directory. It might be different from the Unitex installation directory and is usually installed in your `$HOME` directory.
 
-
+The `synthesis` cascade and graphs can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
 
 
 ## Demonstration
 
-An example of cascades and graphs can be downloaded here: [Unitex-CasSys](./Unitex-CasSys)
+An example of cascades and graphs can be downloaded here: [Unitex-CasSys](./Unitex-CasSys).
 
 * Notebook: [usage-demo.ipynb](usage-demo.ipynb) 
 
